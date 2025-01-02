@@ -1,8 +1,11 @@
 import React from 'react'
+import './ImageGenerator.css'
 
 
-export const ImageGenerator = () => {
+const ImageGenerator = () => {
   return (
     <div>ImageGenerator</div>
   )
 }
+
+export default ImageGenerator
