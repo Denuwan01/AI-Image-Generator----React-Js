@@ -5,7 +5,13 @@ import default_image from '../Assests/default_image.svg'
 
 const ImageGenerator = () => {
   return (
-    <div>ImageGenerator</div>
+    <div className="ai-image-generator">
+      <div className="header">Ai image <span>generator</span></div>
+      <div className="img-loading">
+        <div className="image"><img src={default_image} alt="" /></div>
+      </div>
+
+    </div>
   )
 }
 
