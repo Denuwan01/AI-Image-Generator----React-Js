@@ -1,5 +1,6 @@
 import React from 'react'
 import './ImageGenerator.css'
+import default_image from '../Assests/default_image.svg'
 
 
 const ImageGenerator = () => {
