@@ -24,6 +24,7 @@ const ImageGenerator = () => {
           headers: {
             "Content-Type": "application/json",
             "Authorization": `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}` // Securely store API Key
+
           },
           body: JSON.stringify({
             prompt: inputRef.current.value,
@@ -33,7 +34,7 @@ const ImageGenerator = () => {
         }
       );
 
-      const data = await response.json();
+      let data = await response.json();
       console.log(data);
     };
   }
@@ -48,7 +49,7 @@ const ImageGenerator = () => {
 
       <div className="search-box">
         <input type="text" ref={inputRef} className='search-input' placeholder='Describe What You Want To See' />
-        <div className="generate-btn">Generate</div>
+        <div className="generate-btn" onClick={() => { imageGenerator() }}>Generate</div>
 
       </div>
     </div>
